@@ -1,9 +1,9 @@
 <center>
   
 <img src="gerb_rf1.gif" id="gif1" width="80%" width="80%" hidden alt="tele2 moment">
-<h1> SWAG </h1>
+<h1 id="swag" hidden> SWAG </h1>
  
-<button type="button" onClick="Play(); toggle(this)">МЯСНАЯ ЗАРУБА</button>
+<button type="button" id="bt" onClick="Play(); toggle(this)">МЯСНАЯ ЗАРУБА</button>
     <audio hidden autoplay loop controls id="audioval">
       <source src="motiv.mp3" type="audio/mp3">
     </audio>
@@ -18,18 +18,21 @@
         }
          let element = document.getElementById("gif1");
         element.removeAttribute("hidden");
+         let element1 = document.getElementById("swag");|
+        element.removeAttribute("hidden");
       }
     </script>
 
 <script>
-var x = document.getElementById("1"); 
+var x = document.getElementById("bt"); 
 
 function playAudio() { 
   x.play(); 
 } 
 
 function pauseAudio() { 
-  x.pause(); 
+  x.pause();
+  x.innerText = "ПРИОСТАНОВИТЬ ЗАРУБУ";
 } 
 </script>
 </center>
