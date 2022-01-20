@@ -2,6 +2,23 @@
   
 <img src="gerb_rf1.gif" id="gif1" width="80%" width="80%" visibility="hidden" alt="tele2 moment">
 <h1> SWAG </h1>
+ 
+<button type="button" onClick="Play()">МЯСНАЯ ЗАРУБА</button>
+    <audio controls id="audioval">
+      <source src="motiv.mp3" type="audio/mp3">
+    </audio>
+    <script type="text/javascript">
+      function Play()
+      {
+        var myAudio = document.getElementById("audioval");
+        if(myAudio.paused) {
+            myAudio.play();
+        }
+        else {
+           myAudio.pause();
+        }
+      }
+    </script>
   
 <audio id="1">
   <source src="motiv.mp3" type="audio/ogg">
