@@ -3,7 +3,7 @@
 <img src="gerb_rf1.gif" id="gif1" width="80%" width="80%" hidden alt="tele2 moment">
 <h1> SWAG </h1>
  
-<button type="button" onClick="Play()">МЯСНАЯ ЗАРУБА</button>
+<button type="button" onClick="Play(); toggle(this)">МЯСНАЯ ЗАРУБА</button>
     <audio hidden autoplay controls id="audioval">
       <source src="motiv.mp3" type="audio/mp3">
     </audio>
@@ -31,5 +31,20 @@ function pauseAudio() {
   x.pause(); 
 } 
 </script>
+  
+<script>
+  let toggle = button => {
+     let element = document.getElementById("myaudio");
+     let hidden = element.getAttribute("hidden");
 
+     if (hidden) {
+        element.removeAttribute("hidden");
+        button.innerText = "Hide Audio";
+     } else {
+        element.setAttribute("hidden", "hidden");
+        button.innerText = "Show Audio";
+     }
+  }
+</script>
+  
 </center>
