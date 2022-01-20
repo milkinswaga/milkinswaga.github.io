@@ -2,6 +2,7 @@
   
 <img src="gerb_rf1.gif" id="gif1" width="80%" width="80%" hidden alt="tele2 moment">
 <h1 id="swag" hidden> SWAG </h1>
+<h1 id="swag" > ЭТО ЛУЧШИЙ САЙТ НА ТЕРРИТОРИИ МИРА </h1>
  
 <button type="button" id="bt" onClick="Play()">МЯСНАЯ ЗАРУБА</button>
     <audio hidden loop controls id="audioval">
@@ -28,11 +29,12 @@ var x = document.getElementById("bt");
 
 function playAudio() { 
   x.play(); 
+  x.innerText = "ПРИОСТАНОВИТЬ ЗАРУБУ";
 } 
 
 function pauseAudio() { 
   x.pause();
-  x.innerText = "ПРИОСТАНОВИТЬ ЗАРУБУ";
+  x.innerText = "ВОЗОБНОВИТЬ ЗАРУБУ";
 } 
 </script>
 </center>
