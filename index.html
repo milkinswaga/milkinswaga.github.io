@@ -12,11 +12,11 @@
       function Play(bt) {
         var myAudio = document.getElementById("audioval");
         if(myAudio.paused) {
-            bt.innerText = "ВОЗОБНОВИТЬ ЗАРУБУ";
+            bt.innerText = "ПРИОСТАНОВИТЬ ЗАРУБУ";
             myAudio.play();
         }
         else {
-           bt.innerText = "ПРИОСТАНОВИТЬ ЗАРУБУ";
+           bt.innerText = "ВОЗОБНОВИТЬ ЗАРУБУ";
            myAudio.pause();
         }
          let element = document.getElementById("gif1");
