@@ -9,12 +9,14 @@
       <source src="motiv.mp3" type="audio/mp3">
     </audio>
     <script type="text/javascript">
-      function Play() {
+      function Play(bt) {
         var myAudio = document.getElementById("audioval");
         if(myAudio.paused) {
+            bt.innerText = "ВОЗОБНОВИТЬ ЗАРУБУ";
             myAudio.play();
         }
         else {
+           bt.innerText = "ПРИОСТАНОВИТЬ ЗАРУБУ";
            myAudio.pause();
         }
          let element = document.getElementById("gif1");
@@ -23,18 +25,5 @@
         element1.removeAttribute("hidden");
       }
     </script>
-
-<script>
-var x = document.getElementById("bt"); 
-
-function playAudio() { 
-  x.play(); 
-  x.innerText = "ПРИОСТАНОВИТЬ ЗАРУБУ";
-} 
-
-function pauseAudio() { 
-  x.pause();
-  x.innerText = "ВОЗОБНОВИТЬ ЗАРУБУ";
-} 
-</script>
+  
 </center>
