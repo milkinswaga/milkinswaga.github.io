@@ -3,8 +3,22 @@
 <img src="gerb_rf1.gif" id="gif1" width="80%" width="80%" vi alt="tele2 moment">
 <h1> SW4G </h1>
 
-<audio controls loop id="sound1" src="motiv.mp3" preload="auto" visibility: hidden></audio>
-  <button onclick="document.getElementById('sound1').play();">НАЧАТЬ МЯСНУЮ ЗАРУБУ</button>
-  <button onclick="document.getElementById("gif1").style.display = "block";">ОСТАНОВИТЬ МЯСНУЮ ЗАРУБУ</button>
+<audio id="1">
+  <source src="motiv.mp3" type="audio/ogg">
+</audio>
+<button onclick="playAudio()" type="button">НАЧАТЬ МЯСНУЮ ЗАРУБУ</button>
+<button onclick="pauseAudio()" type="button">ПРИОСТАНОВИТЬ МЯСНУЮ ЗАРУБУ</button> 
+
+<script>
+var x = document.getElementById("1"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
 
 </center>
