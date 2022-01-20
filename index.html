@@ -8,8 +8,7 @@
       <source src="motiv.mp3" type="audio/mp3">
     </audio>
     <script type="text/javascript">
-      function Play()
-      {
+      function Play() {
         var myAudio = document.getElementById("audioval");
         if(myAudio.paused) {
             myAudio.play();
@@ -17,6 +16,8 @@
         else {
            myAudio.pause();
         }
+         let element = document.getElementById("gif1");
+        element.removeAttribute("hidden");
       }
     </script>
 
@@ -31,20 +32,4 @@ function pauseAudio() {
   x.pause(); 
 } 
 </script>
-  
-<script>
-  let toggle = button => {
-     let element = document.getElementById("gif1");
-     let hidden = element.getAttribute("hidden");
-
-     if (hidden) {
-        element.removeAttribute("hidden");
-        button.innerText = "Hide Audio";
-     } else {
-        element.setAttribute("hidden", "hidden");
-        button.innerText = "Show Audio";
-     }
-  }
-</script>
-  
 </center>
