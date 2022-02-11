@@ -28,6 +28,7 @@ SWAG</h1>
 		if (i) {
 			secretimage.setAttribute("hidden", "")
 			gerb.removeAttribute("hidden")
+			secretaudio.pause()
 			if(audio.paused) {
             	bt.innerText = "ПРИОСТАНОВИТЬ ЗАРУБУ";
             	audio.play();
@@ -39,6 +40,7 @@ SWAG</h1>
 			} else {
 				gerb.setAttribute("hidden", "")
 				secretimage.removeAttribute("hidden")
+				audio.pause()
 				if(secretaudio.paused) {
             		bt.innerText = "ПРИОСТАНОВИТЬ ЗАРУБУ";
             		secretaudio.play();
