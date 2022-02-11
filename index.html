@@ -26,7 +26,7 @@
 
 		if (i) {
 			secretimage.setAttribute("hidden", "")
-			document.getElementById("swag").innerText("ЭТО ЛУЧШИЙ САЙТ НА ТЕРРИТОРИИ МИРА")
+			swag.innerHTML = "ЭТО ЛУЧШИЙ САЙТ НА ТЕРРИТОРИИ МИРА"
 			gerb.removeAttribute("hidden")
 			secretaudio.pause()
 			if(audio.paused) {
@@ -38,7 +38,7 @@
 			} else {
 				gerb.setAttribute("hidden", "")
 				secretimage.removeAttribute("hidden")
-				document.getElementById("swag").innerText("ZLODEY")
+				swag.innerHTML = "ZLODEY"
 				audio.pause()
 				if(secretaudio.paused) {
             		secretaudio.play();
