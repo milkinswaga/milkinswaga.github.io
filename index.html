@@ -1,52 +1,39 @@
 <title>ОФИНЦЛЬЫНЙ СЙАТ МИРА</title>
 
 <center>
-  
-<img src="gerb_rf1.gif" id="gif1" width="80%" hidden alt="tele2 moment">
-<img src="secretimage.jpg" id="img1" width="80%" hidden alt="mts moment">
-<h1 id="swag" hidden> ЭТО ЛУЧШИЙ САЙТ НА ТЕРРИТОРИИ МИРА </h1>
-<h1 id="swag" > SWAG </h1>
+<img src="gerb_rf1.gif" id="gerb" width="80%" hidden alt="tele2 moment">
+<img src="secretimage.jpg" id="secret" width="80%" hidden alt="mts moment">
+<h1 id="swag" hidden>ЭТО ЛУЧШИЙ САЙТ НА ТЕРРИТОРИИ МИРА
+SWAG</h1>
  
 <button type="button" id="bt" onClick="Play(this)">МЯСНАЯ ЗАРУБА</button>
-    <audio hidden loop controls id="audioval">
-      <source src="motiv.mp3" type="audio/mp3">
-    </audio>
- <audio hidden loop controls id="audioval2">
-      <source src="secretmusic.mp3" type="audio/mp3">
-    </audio>
-    <script type="text/javascript">
+
+<audio hidden loop controls id="audioval">
+	<source src="motiv.mp3" type="audio/mp3">
+</audio>
+
+<audio hidden loop controls id="audioval2">
+	<source src="secretmusic.mp3" type="audio/mp3">
+</audio>
+
+<script type="text/javascript">
       function Play(bt) {
         let i = Math.round(Math.random()) == 0
-        if (i) {
-        var myAudio = document.getElementById("audioval");
-        if(myAudio.paused) {
+		let swag = document.getElementById("swag")
+		let image = i ? document.getElementById("gerb") : document.getElementById("secret")
+		let audio = i ? document.getElementById("audioval") : document.getElementById("audioval2")
+
+		if(audio.paused) {
             bt.innerText = "ПРИОСТАНОВИТЬ ЗАРУБУ";
-            myAudio.play();
+            audio.play();
         }
         else {
            bt.innerText = "ВОЗОБНОВИТЬ ЗАРУБУ";
-           myAudio.pause();
+           audio.pause();
         }
-         let element = document.getElementById("gif1");
-        element.removeAttribute("hidden");
-         let element1 = document.getElementById("swag");
-        element1.removeAttribute("hidden");
-        } else {
-        var myAudio = document.getElementById("audioval2");
-        if(myAudio.paused) {
-            bt.innerText = "ПРИОСТАНОВИТЬ ЗАРУБУ";
-            myAudio.play();
-        }
-        else {
-           bt.innerText = "ВОЗОБНОВИТЬ ЗАРУБУ";
-           myAudio.pause();
-        }
-         let element = document.getElementById("img1");
-        element.removeAttribute("hidden");
-         let element1 = document.getElementById("swag");
-        element1.removeAttribute("hidden");
-        }
+
+		image.removeAttribute("hidden")
+		swag.removeAttribute("hidden")
       }
-    </script>
-  
+</script>
 </center>
