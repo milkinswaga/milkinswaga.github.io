@@ -11,6 +11,9 @@
     <audio hidden loop controls id="audioval">
       <source src="motiv.mp3" type="audio/mp3">
     </audio>
+ <audio hidden loop controls id="audioval2">
+      <source src="secretmusic.mp3" type="audio/mp3">
+    </audio>
     <script type="text/javascript">
       function Play(bt) {
         let i = Math.round(Math.random()) == 0
@@ -29,7 +32,7 @@
          let element1 = document.getElementById("swag");
         element1.removeAttribute("hidden");
         } else {
-        var myAudio = document.getElementById("secretmusic");
+        var myAudio = document.getElementById("audioval2");
         if(myAudio.paused) {
             bt.innerText = "ПРИОСТАНОВИТЬ ЗАРУБУ";
             myAudio.play();
