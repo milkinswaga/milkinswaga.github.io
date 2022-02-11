@@ -3,7 +3,7 @@
 <center>
 <img src="gerb_rf1.gif" id="gerb" width="80%" hidden alt="tele2 moment">
 <img src="secretimage.jpg" id="secret" height="90%" hidden alt="mts moment">
-<h1 id="swag" hidden>ЭТО ЛУЧШИЙ САЙТ НА ТЕРРИТОРИИ МИРА </h1>
+<h1 id="swag" hidden>ЭТО ЛУЧШИЙ САЙТ НА ТЕРРИТОРИИ МИРА</h1>
  
 <button type="button" id="bt" onClick="Play(this)">МЯСНАЯ ЗАРУБА</button>
 
@@ -26,7 +26,7 @@
 
 		if (i) {
 			secretimage.setAttribute("hidden", "")
-			document.getElementById("swag").innerHTML("ЭТО ЛУЧШИЙ САЙТ НА ТЕРРИТОРИИ МИРА")
+			document.getElementById("swag").innerText("ЭТО ЛУЧШИЙ САЙТ НА ТЕРРИТОРИИ МИРА")
 			gerb.removeAttribute("hidden")
 			secretaudio.pause()
 			if(audio.paused) {
@@ -38,7 +38,7 @@
 			} else {
 				gerb.setAttribute("hidden", "")
 				secretimage.removeAttribute("hidden")
-				document.getElementById("swag").innerHTML("ZLODEY")
+				document.getElementById("swag").innerText("ZLODEY")
 				audio.pause()
 				if(secretaudio.paused) {
             		secretaudio.play();
