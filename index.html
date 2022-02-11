@@ -12,6 +12,8 @@
     </audio>
     <script type="text/javascript">
       function Play(bt) {
+        let i = Math.round(Math.random()) == 0
+        if i {
         var myAudio = document.getElementById("audioval");
         if(myAudio.paused) {
             bt.innerText = "ПРИОСТАНОВИТЬ ЗАРУБУ";
@@ -25,6 +27,21 @@
         element.removeAttribute("hidden");
          let element1 = document.getElementById("swag");
         element1.removeAttribute("hidden");
+        } else {
+        var myAudio = document.getElementById("audioval2");
+        if(myAudio.paused) {
+            bt.innerText = "ПРИОСТАНОВИТЬ ЗАРУБУ";
+            myAudio.play();
+        }
+        else {
+           bt.innerText = "ВОЗОБНОВИТЬ ЗАРУБУ";
+           myAudio.pause();
+        }
+         let element = document.getElementById("gif2");
+        element.removeAttribute("hidden");
+         let element1 = document.getElementById("swag2");
+        element1.removeAttribute("hidden");
+        }
       }
     </script>
   
