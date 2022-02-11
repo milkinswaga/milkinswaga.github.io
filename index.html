@@ -20,19 +20,35 @@ SWAG</h1>
       function Play(bt) {
         let i = Math.round(Math.random()) == 0
 		let swag = document.getElementById("swag")
-		let image = i ? document.getElementById("gerb") : document.getElementById("secret")
-		let audio = i ? document.getElementById("audioval") : document.getElementById("audioval2")
+		let gerb = document.getElementById("gerb")
+		let secretimage = document.getElementById("secret")
+		let audio = document.getElementById("audioval")
+		let secretaudio = document.getElementById("audioval2")
 
-		if(audio.paused) {
-            bt.innerText = "ПРИОСТАНОВИТЬ ЗАРУБУ";
-            audio.play();
-        }
-        else {
-           bt.innerText = "ВОЗОБНОВИТЬ ЗАРУБУ";
-           audio.pause();
-        }
+		if (i) {
+			secretimage.setAttribute("hidden", "")
+			gerb.removeAttribute("hidden")
+			if(audio.paused) {
+            	bt.innerText = "ПРИОСТАНОВИТЬ ЗАРУБУ";
+            	audio.play();
+        	}
+        	else {
+           		bt.innerText = "ВОЗОБНОВИТЬ ЗАРУБУ";
+           		audio.pause();
+        	}
+			} else {
+				gerb.setAttribute("hidden", "")
+				secretimage.removeAttribute("hidden")
+				if(secretaudio.paused) {
+            		bt.innerText = "ПРИОСТАНОВИТЬ ЗАРУБУ";
+            		secretaudio.play();
+        		}
+        		else {
+           			bt.innerText = "ВОЗОБНОВИТЬ ЗАРУБУ";
+           			secretaudio.pause();
+        		}
+			}
 
-		image.removeAttribute("hidden")
 		swag.removeAttribute("hidden")
       }
 </script>
