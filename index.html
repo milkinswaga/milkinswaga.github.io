@@ -33,6 +33,7 @@
 		<script type="text/javascript">
 			function Play(bt) {
 				let i = Math.round(Math.random() * 100) <= 5;
+				let j = Math.round(Math.random()) == 0
 				let swag = document.getElementById("swag");
 				let gerb = document.getElementById("gerb");
 				let secretimage = document.getElementById("secret");
@@ -42,9 +43,7 @@
 				let osnova = document.getElementById("audioval4")
 				let comeback = document.getElementById("cmbk")
 
-
 				if (!i) {
-					let j = Math.round(Math.random()) == 0
 					if (j) {
 						secretimage.setAttribute("hidden", "");
 						secretaudio.pause();
@@ -76,6 +75,8 @@
 				} else {
 					gerb.setAttribute("hidden", "");
 					secretimage.removeAttribute("hidden");
+					comeback.setAttribute("hidden", "");
+					osnova.pause();
 					swag.innerHTML = "ОБЕRНИСЬ,  Я В ТВОИХ СТЕНАХ";
 					audio.pause();
 					if (secretaudio.paused) {
