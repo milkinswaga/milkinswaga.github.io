@@ -22,7 +22,7 @@
     <source src="secretmusic.mp3" type="audio/mp3">
 </audio>
 
-<audio hidden loop controls id="audioval3">
+<audio hidden controls id="audioval3">
     <source src="intro.wav" type="audio/mp3">
 </audio>
 
@@ -51,10 +51,15 @@
             secretaudio.pause()
                         } else {
 	cmbk.setAttribute("hidden", "")
-            swag.innerHTML = "ДОРОГИЕ РОССИЯНЕ, МЫ НАЧИНАЕМ ЖИТЬ"  
+            swag.innerHTML = "ДОРОГИЕ РОССИЯНЕ, МЫ НАЧИНАЕМ ЖИТЬ ЗАНОВО"  
             gerb.removeAttribute("hidden")
 
-            secretaudio.pause()
+            audioval3.pause()
+                        }
+            if(audio.paused) {
+                audio.play();
+            }
+	    audioval4.pause()
                         }
             if(audio.paused) {
                 audio.play();
