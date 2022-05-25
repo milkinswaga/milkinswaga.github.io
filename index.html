@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<title>ОФИНЦЛЬЫНЙ СЙАТ МИРА</title>
+	<title>milkin</title>
 	<style>
     body {
 		background-color: #000000;
@@ -9,75 +9,6 @@
 </head>
 <body>
 	<center>
-		<img src="gerb_rf1.gif" id="gerb" width="80%" hidden alt="tele2 moment" />
-		<img src="secretimage.jpg" id="secret" height="90%" hidden alt="mts moment" />
-		<img src="comeback.gif" id="cmbk" width="80%" hidden alt="megafon moment">
-		<h1 id="swag" hidden style="color:white;">ЭТО ЛУЧШИЙ САЙТ НА ТЕРРИТОРИИ МИРА</h1>
-		<button type="button" id="bt" onClick="Play(this)">МЯСНАЯ ЗАРУБА / ВЫКЛЮЧИТЬ ЗВУК</button>
-		<audio hidden loop controls id="audioval">
-			<source src="motiv.mp3" type="audio/mp3" />
-		</audio>
-		<audio hidden loop controls id="audioval2">
-			<source src="secretmusic.mp3" type="audio/mp3" />
-		</audio>
-
-		<audio hidden loop controls id="audioval4">
-			<source src="osnova.wav" type="audio/mp3">
-			<source src="osnova.mp3" type="audio/mp3">
-		</audio>
-
-		<script type="text/javascript">
-			function Play(bt) {
-				let i = Math.round(Math.random() * 100) <= 5;
-				let j = Math.round(Math.random()) == 0
-				let swag = document.getElementById("swag");
-				let gerb = document.getElementById("gerb");
-				let secretimage = document.getElementById("secret");
-				let audio = document.getElementById("audioval");
-				let secretaudio = document.getElementById("audioval2");
-				let osnova = document.getElementById("audioval4")
-				let comeback = document.getElementById("cmbk")
-				if (!i) {
-					if (j) {
-						secretimage.setAttribute("hidden", "");
-						secretaudio.pause();
-						comeback.setAttribute("hidden", "");
-						osnova.pause();
-						swag.innerHTML = "ЭТО ЛУЧШИЙ САЙТ НА ТЕРРИТОРИИ МИРА";
-						gerb.removeAttribute("hidden");
-						if (audio.paused) {
-							audio.play();
-						} else {
-							audio.pause();
-						}
-					} else {
-						secretimage.setAttribute("hidden", "");
-						secretaudio.pause();
-						gerb.setAttribute("hidden", "");
-						audio.pause()
-						swag.innerHTML = "ДОРОГИЕ РОССИЯНЕ, МЫ НАЧИНАЕМ ЖИТЬ ЗАНОВО!";
-						comeback.removeAttribute("hidden");
-						if (osnova.paused) {
-							osnova.play();
-						} else {
-							osnova.pause();
-						}
-					}
-				} else {
-					gerb.setAttribute("hidden", "");
-					secretimage.removeAttribute("hidden");
-					comeback.setAttribute("hidden", "");
-					osnova.pause();
-					swag.innerHTML = "ОБЕRНИСЬ,  Я В ТВОИХ СТЕНАХ";
-					audio.pause();
-					if (secretaudio.paused) {
-						secretaudio.play();
-					} else {
-						secretaudio.pause();
-					}
-				}
-				swag.removeAttribute("hidden");
-			}
-		</script>
+		<img src="@" id="@" height="100%" width="100%" hidden alt="no internet connection." />
 	</center>
 </body
